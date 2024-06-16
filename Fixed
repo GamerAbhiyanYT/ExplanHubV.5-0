@@ -8,36 +8,49 @@ local Gui = Library:AddGui({
 
 local Tab = Gui:AddTab("Recommended")
 
-local Category = Tab:AddCategory("If You Die You Will Lose The Toggle")
-
-local Category = Tab:AddCategory("Press This Button To Bring Up Toggle Back")
+local Category = Tab:AddCategory("Press to bring up Toggle")
 
 local Button = Category:AddButton("Bring Up The Toggle", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/BringUpTheToggle/main/ExplanToggle"))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
-local Category = Tab:AddCategory("I Still Recommend To Always Press This After Executing This Script")
+local Category = Tab:AddCategory("I Recommend To Always Executing This Script")
 
 local Button = Category:AddButton("Rejoin Button In Disconnetced", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua"))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/JeTn3Gyu"))() -- Warning + Successfully Executed
 end)
 
-local Tab = Gui:AddTab("Info")
+local Tab = Gui:AddTab("Game Info")
 
-local Category = Tab:AddCategory("Key Will Change Every 24 Hours")
+local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
-local Category = Tab:AddCategory("When It Has Passed 24 Hours The Key Will Change") 
+local Category = Tab:AddCategory("Game Name =")
 
-local Category = Tab:AddCategory("The Key Will Change At My Random Hours")
+local gameNameLabel = Category:AddLabel("Game Name: " .. gameName)
 
-local Button = Category:AddButton("Key = Gh4s°!l0v3~Y0\/•1+1=3|•oek", function()
-	setclipboard("Gh4s°!l0v3~Y0\/•1+1=3|•oek")
-	loadstring(game:HttpGet("https://pastebin.com/raw/i3Cjd3Dk"))() -- Successfully Copy Key
+local Button = Category:AddButton(" Copy Name Game ", function()
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Note!",
+Text = "not done yet!."
+})
+end
 end)
 
-local Tab = Gui:AddTab("Player")
+local Tab = Gui:AddTab("LocalPlayer")
+
+local Category = Tab:AddCategory("Jump")
+
+local DualLabel = Category:AddDualLabel({"1", "250"})
+
+local Slider = Category:AddSlider("JumpPower", 1, 250, 50, function(val)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = val
+end)
+
+local Box = Category:AddBox("JumpPower", function(str)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = str
+end)
 
 local Category = Tab:AddCategory("Speed")
 
@@ -56,26 +69,6 @@ local Button = Category:AddButton("WalkSpeed = 50 Speed", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))()  -- Successfully Executed
 end)
 
-local Toggle = Category:AddToggle("WalkSpeed", false, function(toggle)
-	loadstring(game:HttpGet("https://pastebin.com/raw/YnkT9Pn2"))(toggle)
-end)
-
-local Category = Tab:AddCategory("Jump")
-
-local DualLabel = Category:AddDualLabel({"1", "250"})
-
-local Slider = Category:AddSlider("JumpPower", 1, 250, 50, function(val)
-	game.Players.LocalPlayer.Character.Humanoid.JumpPower = val
-end)
-
-local Box = Category:AddBox("JumpPower", function(str)
-	game.Players.LocalPlayer.Character.Humanoid.JumpPower = str
-end)
-
-local Toggle = Category:AddToggle("JumpPower", false, function(toggle)
-	loadstring(game:HttpGet("https://pastebin.com/raw/1WQxyKKH"))(toggle)
-end)
-
 local Category = Tab:AddCategory("POV")
 
 local DualLabel = Category:AddDualLabel({"70", "120"})
@@ -88,9 +81,7 @@ local Box = Category:AddBox("FieldOfView", function(str)
 	Workspace.CurrentCamera.FieldOfView = str
 end)
 
-local Toggle = Category:AddToggle("FieldOfView", false, function(toggle)
-	loadstring(game:HttpGet("https://pastebin.com/raw/6vXKaUSY"))(toggle)
-end)
+local Tab = Gui:AddTab("Reset settings")
 
 local Category = Tab:AddCategory("Reset | Reset In Game Not In Script Slider")
 
@@ -119,7 +110,7 @@ local Button = Category:AddButton("Keyboard", function()
 end)
 
 local Bind = Category:AddBind("Bind", Gui.ToggleKey, function()
-	print("Toggled GUI")
+	print("Toggle succeed")
 end)
 
 local Tab = Gui:AddTab("More")
@@ -532,6 +523,19 @@ local Button = Category:AddButton("Super Simon Says", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
+local Button = Category:AddButton("Despicable Me 4 Heist Obby 【NEW!】", function()
+	while wait() do game.MarketplaceService:SignalPromptPurchaseFinished(game.Players.LocalPlayer,17596052530,false) end
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("Infinite Money / UGC Limited 【NEW!】", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Imalwibest/Imalwibest/main/wynerdV2.lua",true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton(" ")", function()
+    
+end)
 local Category = Tab:AddCategory("【🌐】Universal")
 
 local Button = Category:AddButton("Universal Aimbot V2", function()
