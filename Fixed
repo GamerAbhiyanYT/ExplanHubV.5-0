@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/annaxiong1/IreXion-UI-Library/6b6fbbf3fc08f7662c25e55a16ca568672aab95d/IreXion%20UI%20Library"))()
 
 local Gui = Library:AddGui({
-	Title = {"ExplanHUB | 【V5.0】", " Universal"},
+	Title = {"ExplanHUB | 【V5.5】", " Universal"},
 	ThemeColor = Color3.fromRGB(0, 255, 0),
 	ToggleKey = Enum.KeyCode.R,
 })
@@ -22,21 +22,21 @@ local Button = Category:AddButton("Rejoin Button In Disconnetced", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/JeTn3Gyu"))() -- Warning + Successfully Executed
 end)
 
-local Tab = Gui:AddTab("Game Info")
+local Tab = Gui:AddTab("information")
 
 local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+local Players = game:GetService("Players")
+
+local UserId = Players.LocalPlayer.UserId
 
 local Category = Tab:AddCategory("Game Name =")
 
 local gameNameLabel = Category:AddLabel("Game Name: " .. gameName)
 
-local Button = Category:AddButton(" Copy Name Game ", function()
-    game:GetService("StarterGui"):SetCore("SendNotification",{
-Title = "Note!",
-Text = "not done yet!."
-})
-end
-end)
+local Category = Tab:AddCategory("User ID =")
+
+local UserIdLabel = Category:AddLabel("User ID: " .. UserId)
 
 local Tab = Gui:AddTab("LocalPlayer")
 
@@ -137,6 +137,26 @@ local Button = Category:AddButton("Sxrge HUB", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
+local Button = Category:AddButton("V HUB V1 【NEW!】", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/V31nc/2642/Created/VHub"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("V HUB V2 【NEW!】", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("Rizz 【NEW!】", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/pPMRh5YJ"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("Script Hub V2 【NEW!】", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/SCRIPTHUBV2/main/SCRIPTHUBV2", true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
 local Category = Tab:AddCategory("【💬】Other")
 
 local Toggle = Category:AddToggle("FullBright", false, function(toggle)
@@ -175,6 +195,11 @@ local Button = Category:AddButton("Infinite Jump 【🚨Anti Rejoin🚨】", fun
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
+local Button = Category:AddButton("Infinite jump V2", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/oksinfjump/main/workssssss",true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
 local Button = Category:AddButton("Infinite Yield", function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
@@ -190,8 +215,18 @@ local Button = Category:AddButton("Esp Player 【Cham】", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
-local Button = Category:AddButton("KeyBoard", function()
+local Button = Category:AddButton("KeyBoard V1", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("KeyBoard V2", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/Keyboardv3/main/mobKeyboard"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("KeyBoard V3", function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/RedZenXYZ/4d80bfd70ee27000660e4bfa7509c667/raw/da903c570249ab3c0c1a74f3467260972c3d87e6/KeyBoard%2520From%2520Ohio%2520Fr%2520Fr"))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
@@ -264,13 +299,33 @@ local Button = Category:AddButton("FE Free Emote", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
-local Button = Category:AddButton("FE Anti Fling", function()
+local Button = Category:AddButton("FE Anti Fling V1", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/Q0Nh2SYx"))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
-local Button = Category:AddButton("FE Fling", function()
+local Button = Category:AddButton("FE Anti Fling V2", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/anti.-./main/fling",true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("FE Anti Fling V3", function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/GxdesRQx'),true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("FE Fling V1", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("FE Fling V2", function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("FE Click To Fling", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_4Q10q272NIQc093Os32uBi29U9PWkU0d3Tr1Uh4k92vus2u10786Z0jep5uhqE2N.lua.txt'),true))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
@@ -296,6 +351,11 @@ end)
 
 local Button = Category:AddButton("FE Fake Lag", function()
 	loadstring(game:HttpGet('https://pastebin.com/raw/VM3b0Thg'))()
+	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("FE switch lag", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Protected%20-%202023-05-28T225112.055.lua.txt'),true))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
@@ -372,14 +432,14 @@ local Button = Category:AddButton("Evade", function()
 end)
 
 
-local Category = Tab:AddCategory("⬇️Key = RoxHub_KeyLERDGDRIFMDS⬇️")
+local Category = Tab:AddCategory("⬇️Key = RoxHub_KeyZRTEDFGQERZX⬇️")
 
 local Button = Category:AddButton("Blox Hunt", function()
 	pcall(function()
 Rox_Hub = true
 loadstring(game:HttpGet("https://gist.githubusercontent.com/HaxxV1/d7cfdb5090e819a84a8db22fb113f39d/raw"))()
 end)
-setclipboard("RoxHub_KeyLERDGDRIFMDS")
+setclipboard("RoxHub_KeyZRTEDFGQERZX")
 loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
@@ -533,9 +593,10 @@ local Button = Category:AddButton("Infinite Money / UGC Limited 【NEW!】", fun
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
-local Button = Category:AddButton(" ")", function()
-    
+local Button = Category:AddButton("The Best Strongest Battle Ground 【NEW!】", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ShowerHead-FluxTeam/scripts/main/funky-friday-autoplay"))()
 end)
+
 local Category = Tab:AddCategory("【🌐】Universal")
 
 local Button = Category:AddButton("Universal Aimbot V2", function()
@@ -543,11 +604,12 @@ local Button = Category:AddButton("Universal Aimbot V2", function()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
 
-local Category = Tab:AddCategory("【🔲】GUI / HUB")
-
-local Button = Category:AddButton("Give me another GUI / HUB script", function()
-	
+local Button = Category:AddButton("Universal Silent Aim 【NEW!】", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/silents.aim/main/s",true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
 end)
+
+local Category = Tab:AddCategory("【🔲】GUI / HUB")
 
 local Category = Tab:AddCategory("GUI")
 
@@ -564,6 +626,10 @@ end)
 local Button = Category:AddButton("Admin GUI", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 	loadstring(game:HttpGet("https://pastebin.com/raw/058MSFpG"))() -- Successfully Executed
+end)
+
+local Button = Category:AddButton("RoGhoul Script Gui", function()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
 local Category = Tab:AddCategory("HUB")
